@@ -7,7 +7,7 @@
     <groupId>io.github.thierrysquirrel</groupId>
     <artifactId>pine-spring-boot</artifactId>
     <packaging>pom</packaging>
-    <version>1.5.0.0-RELEASE</version>
+    <version>1.5.0.1-RELEASE</version>
 
     <name>pine-spring-boot</name>
     <description>pine-spring-boot</description>

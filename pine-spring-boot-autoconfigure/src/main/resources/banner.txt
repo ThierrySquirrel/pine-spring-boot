@@ -9,4 +9,4 @@ ${AnsiColor.BRIGHT_GREEN}
      `\       /'
        `-._.-'
           `
-pine version:1.5.0.0.RELEASE
+pine version:1.5.0.1.RELEASE
