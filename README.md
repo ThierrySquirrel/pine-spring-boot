@@ -29,8 +29,8 @@ Support function:
 <!--Adding dependencies to pom. XML-->
         <dependency>
             <artifactId>pine-spring-boot-starter</artifactId>
-            <groupId>com.github.thierrysquirrel</groupId>
-            <version>1.4.1.4-RELEASE</version>
+            <groupId>io.github.thierrysquirrel</groupId>
+            <version>1.5.0.0-RELEASE</version>
         </dependency>
 ``` 
 
@@ -38,14 +38,13 @@ Support function:
  
  ```properties
  ## application.properties
-pine.service-url="127.0.0.1:6060" # This is required for service startup
-pine.cluster-service-url="127.0.0.1:6060,127.0.0.1:6061,127.0.0.1:6062" # If you need a cluster, please fill in this way
+pine.service-url=127.0.0.1:6060 # This is required for service startup
+pine.cluster-service-url=127.0.0.1:6060,127.0.0.1:6061,127.0.0.1:6062 # If you need a cluster, please fill in this way
  ```
  
  # Start Pine
  ```java
  @SpringBootApplication
- @EnablePineService
  public class DemoApplication{
      public static void main(String[] args){
          SpringApplication.run(DemoApplication.class, args);

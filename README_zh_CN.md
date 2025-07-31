@@ -27,8 +27,8 @@
 <!--在pom.xml中添加依赖-->
         <dependency>
             <artifactId>pine-spring-boot-starter</artifactId>
-            <groupId>com.github.thierrysquirrel</groupId>
-            <version>1.4.1.4-RELEASE</version>
+            <groupId>io.github.thierrysquirrel</groupId>
+            <version>1.5.0.0-RELEASE</version>
         </dependency>
 ``` 
 
@@ -36,14 +36,13 @@
  
  ```properties
  ## application.properties
-pine.service-url="127.0.0.1:6060" # 这是必须填写的，用于服务启动
-pine.cluster-service-url="127.0.0.1:6060,127.0.0.1:6061,127.0.0.1:6062" # 如果您需要集群，请这样填写
+pine.service-url=127.0.0.1:6060 # 这是必须填写的，用于服务启动
+pine.cluster-service-url=127.0.0.1:6060,127.0.0.1:6061,127.0.0.1:6062 # 如果您需要集群，请这样填写
  ```
  
  # 启动Pine
  ```java
  @SpringBootApplication
- @EnablePineService
  public class DemoApplication{
      public static void main(String[] args){
          SpringApplication.run(DemoApplication.class, args);
